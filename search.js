@@ -222,18 +222,26 @@ const petsData = [
     }
 ];
 
+// Global variable to track current image index for each pet
+const currentImageIndices = {};
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initial display of all pets
-    displayFilteredPets();
+    renderPets(petsData);
     
     // Add event listener for the filter form
     document.getElementById('filter-form').addEventListener('submit', function(e) {
         e.preventDefault();
-        displayFilteredPets();
+        filterPets();
+    });
+
+    // Also filter when checkboxes change (better UX)
+    document.querySelectorAll('#filter-form input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', filterPets);
     });
 });
 
-function displayFilteredPets() {
+function filterPets() {
     // Get selected filters
     const selectedTypes = getSelectedValues('type');
     const selectedStatuses = getSelectedValues('status');
@@ -259,6 +267,9 @@ function renderPets(pets) {
     displayDataDiv.innerHTML = '';
     
     pets.forEach((pet, index) => {
+        // Initialize or reset the image index for this pet
+        currentImageIndices[index] = 0;
+        
         const petElement = document.createElement('div');
         petElement.className = 'one-pet';
         petElement.innerHTML = `
@@ -266,8 +277,8 @@ function renderPets(pets) {
                 <div class="oneContainer">
                     <h3>${pet.name}</h3>
                     <div class="pet-images">
-                        <img id="image1${index}" src="${pet.photo_url}" class="visible">
-                        <img id="image2${index}" src="${pet.photo_url2}">
+                        <img id="image1${index}" src="${pet.photo_url}" class="${currentImageIndices[index] === 0 ? 'visible' : ''}">
+                        <img id="image2${index}" src="${pet.photo_url2}" class="${currentImageIndices[index] === 1 ? 'visible' : ''}">
                     </div>
                     <div class="buttons">
                         <button id="prev${index}" class="prev-button">&lt;</button>
@@ -282,37 +293,35 @@ function renderPets(pets) {
             </div>
         `;
         displayDataDiv.appendChild(petElement);
+        
+        // Add event listeners for this specific pet
+        setupPetControls(index);
     });
-    
-    // Add event listeners for image switching
-    addImageSwitchListeners();
 }
 
-function addImageSwitchListeners() {
-    document.querySelectorAll('.pets-container').forEach((container, index) => {
-        const images = container.querySelectorAll('.pet-images img');
-        const nextButton = container.querySelector('.next-button');
-        const prevButton = container.querySelector('.prev-button');
-        let currentIndex = 0;
-        
-        function updateImageVisibility() {
-            images.forEach((img, i) => {
-                if (i === currentIndex) {
-                    img.classList.add('visible');
-                } else {
-                    img.classList.remove('visible');
-                }
-            });
+function setupPetControls(index) {
+    const container = document.getElementById(`petContainer${index}`);
+    const images = container.querySelectorAll('.pet-images img');
+    const nextButton = container.querySelector('.next-button');
+    const prevButton = container.querySelector('.prev-button');
+    
+    nextButton.addEventListener('click', () => {
+        currentImageIndices[index] = (currentImageIndices[index] + 1) % images.length;
+        updatePetImages(images, currentImageIndices[index]);
+    });
+    
+    prevButton.addEventListener('click', () => {
+        currentImageIndices[index] = (currentImageIndices[index] - 1 + images.length) % images.length;
+        updatePetImages(images, currentImageIndices[index]);
+    });
+}
+
+function updatePetImages(images, currentIndex) {
+    images.forEach((img, i) => {
+        if (i === currentIndex) {
+            img.classList.add('visible');
+        } else {
+            img.classList.remove('visible');
         }
-        
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateImageVisibility();
-        });
-        
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateImageVisibility();
-        });
     });
 }
