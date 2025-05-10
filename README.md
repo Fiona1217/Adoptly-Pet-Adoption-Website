@@ -1,5 +1,13 @@
 # 🐾 Adoptly. – Pet Adoption Website
 
+> [!IMPORTANT]
+> This is a **static JavaScript version** of the original dynamic website. It has been modified to:
+> - Remove all PHP/database dependencies
+> - Include all pet data directly in JavaScript
+> - Maintain all filtering functionality client-side
+> 
+> **The actual original PHP/MySQL version with database connectivity can be found [here](https://github.com/ahrlic/Pet-Adoption-Application)**
+
 ## 📌 Project Overview
 **Adoptly** is a group web development project designed to help users explore pet adoption options in a user-friendly and informative way. This website provides resources, adoption tips, insurance plans, and more to support individuals looking to adopt pets responsibly.
 
