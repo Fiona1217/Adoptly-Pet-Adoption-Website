@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a html file for Lab Assignment 1">
+        <meta name="keywords" content="CST8285 - Assignment 1">
+        <meta name="author" content="Fiona Ang">
+        <title>Search - Adoptly</title>
+        <!-- <meta http-equiv="refresh" content="1"> -->
+    <link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<body id="search">
+    <!-- This is the header -->
+    <header>
+<link rel="stylesheet" href="UpperNavInsurance.css">
+
+<nav class="navbar1">
+    <a href="Home.php" id="logo">Adoptly<span id="logo-dot">.</span></a>
+    <a class="nav-link1" href="Home.php">Home</a>
+    <a class="nav-link1" href="search.php">Search</a>
+    <a class="nav-link1" href="Insurance.php">Insurance</a>
+    <a class="nav-link1" href="petCare.php">Tips</a>
+    <a class="nav-link1" href="contact.php">Contact</a>
+    <a class="nav-link1" href="login.php">Sign In</a>
+</nav>    </header>
+
+    <!-- This is the main body -->
+    <main>
+        <section class="sidebar">
+            <h1>Filter</h1>
+            <form id="filter-form">
+                <section id="pet-types">
+                    <h2>Types of pets</h2>
+                    <div class="cat-checkbox">
+                        <input type="checkbox" name="type[]" id="cat-checkbox" value="Cat" checked="">
+                        <label for="cat-checkbox">Cats</label>
+                    </div>
+        
+                    <div class="dog-checkbox">
+                        <input type="checkbox" name="type[]" id="dog-checkbox" value="Dog" checked="">
+                        <label for="dog-checkbox">Dog</label>
+                    </div>
+        
+                    <div class="hamster-checkbox">
+                        <input type="checkbox" name="type[]" id="hamster-checkbox" value="Hamster" checked="">
+                        <label for="hamster-checkbox">Hamster</label>
+                    </div>
+                </section>
+                <section id="adoption-status">
+                    <h2>Adoption status</h2>
+                    <div class="available-checkbox">
+                        <input type="checkbox" name="status[]" id="available-checkbox" value="Available" checked="">
+                        <label for="available-checkbox">Available</label>
+                    </div>
+        
+                    <div class="adopted-checkbox">
+                        <input type="checkbox" name="status[]" id="adopted-checkbox" value="Adopted" checked="">
+                        <label for="adopted-checkbox">Adopted</label>
+                    </div>
+                </section>
+                
+                <button type="submit" id="filter-button">Apply Filters</button>
+            </form>
+        </section>
+
+        <div class="main-content">
+            <section class="section1">
+                <h2>Looking for <b>PETS</b> ?</h2>
+                <p>They are all very friendly (100% legit) 🐾</p>
+            </section>
+
+            <div class="display-data"><div class="one-pet">
+            <div id="petContainer0" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Whisker Valentino</h3>
+                    <div class="pet-images">
+                        <img id="image10" src="pics\cat11(3).jpg" class="visible">
+                        <img id="image20" src="pics\cat11(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev0" class="prev-button">&lt;</button>
+                        <button id="next0" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Will steal yo girl</p>
+                    <p><b>Species:</b> Orange Tabby</p>
+                    <p><b>Age:</b> 1</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer1" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Oopie</h3>
+                    <div class="pet-images">
+                        <img id="image11" src="pics\cat2(3).jpg" class="visible">
+                        <img id="image21" src="pics\cat2(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev1" class="prev-button">&lt;</button>
+                        <button id="next1" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Very eepy</p>
+                    <p><b>Species:</b> American Shorthair</p>
+                    <p><b>Age:</b> 2</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer2" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Goopie</h3>
+                    <div class="pet-images">
+                        <img id="image12" src="pics\cat8(3).png" class="visible">
+                        <img id="image22" src="pics\cat8(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev2" class="prev-button">&lt;</button>
+                        <button id="next2" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Smoked once</p>
+                    <p><b>Species:</b> Tabby Cat</p>
+                    <p><b>Age:</b> 3</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer3" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Lady Whiskerstein</h3>
+                    <div class="pet-images">
+                        <img id="image13" src="pics\cat6(3).jpg" class="visible">
+                        <img id="image23" src="pics\cat6(3).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev3" class="prev-button">&lt;</button>
+                        <button id="next3" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Wants Royal Canin everyday</p>
+                    <p><b>Species:</b> Exotic Shorthair</p>
+                    <p><b>Age:</b> 4</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer4" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Nibbles</h3>
+                    <div class="pet-images">
+                        <img id="image14" src="pics\dog5.jpeg" class="visible">
+                        <img id="image24" src="pics\dog4and5.jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev4" class="prev-button">&lt;</button>
+                        <button id="next4" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Loves nibbling</p>
+                    <p><b>Species:</b> Labrador Retriever</p>
+                    <p><b>Age:</b> 4</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer5" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Bubbles</h3>
+                    <div class="pet-images">
+                        <img id="image15" src="pics\dog4.jpeg" class="visible">
+                        <img id="image25" src="pics\dog4and5.jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev5" class="prev-button">&lt;</button>
+                        <button id="next5" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Is very concerned about Nibbles</p>
+                    <p><b>Species:</b> Labrador Retriever</p>
+                    <p><b>Age:</b> 4</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer6" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Coco the Ace of Paws</h3>
+                    <div class="pet-images">
+                        <img id="image16" src="pics\cat5(3).jpg" class="visible">
+                        <img id="image26" src="pics\cat5(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev6" class="prev-button">&lt;</button>
+                        <button id="next6" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Do not play solitaire with him</p>
+                    <p><b>Species:</b> Devon Rex</p>
+                    <p><b>Age:</b> 4</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer7" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Stella</h3>
+                    <div class="pet-images">
+                        <img id="image17" src="pics\dog2.jpeg" class="visible">
+                        <img id="image27" src="pics\dog2(2).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev7" class="prev-button">&lt;</button>
+                        <button id="next7" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Loves Minnie Mouse</p>
+                    <p><b>Species:</b> Golden Retriever</p>
+                    <p><b>Age:</b> 2</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer8" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Loudmouth Lila</h3>
+                    <div class="pet-images">
+                        <img id="image18" src="pics\dog6.jpeg" class="visible">
+                        <img id="image28" src="pics\dog6(3).png">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev8" class="prev-button">&lt;</button>
+                        <button id="next8" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Known for being extra dramatic</p>
+                    <p><b>Species:</b> Siberian Husky</p>
+                    <p><b>Age:</b> 5</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer9" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Puffball</h3>
+                    <div class="pet-images">
+                        <img id="image19" src="pics\hamster1.jpeg" class="visible">
+                        <img id="image29" src="pics\hamster1(2).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev9" class="prev-button">&lt;</button>
+                        <button id="next9" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Knows how to pose (amazingly!)</p>
+                    <p><b>Species:</b> Golden Hamster</p>
+                    <p><b>Age:</b> 1</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer10" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Snicker</h3>
+                    <div class="pet-images">
+                        <img id="image110" src="pics\hamster2.jpeg" class="visible">
+                        <img id="image210" src="pics\hamster2(2).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev10" class="prev-button">&lt;</button>
+                        <button id="next10" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">He is very clean</p>
+                    <p><b>Species:</b> Winter White Dwarf Hamster</p>
+                    <p><b>Age:</b> 1</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer11" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Pip</h3>
+                    <div class="pet-images">
+                        <img id="image111" src="pics\hamster3.jpeg" class="visible">
+                        <img id="image211" src="pics\hamster3(3).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev11" class="prev-button">&lt;</button>
+                        <button id="next11" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">May be somewhat traumatized by the water</p>
+                    <p><b>Species:</b> Syrian Hamster</p>
+                    <p><b>Age:</b> 2</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer12" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Jellybean</h3>
+                    <div class="pet-images">
+                        <img id="image112" src="pics\hamster4(3).jpeg" class="visible">
+                        <img id="image212" src="pics\hamster4(2).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev12" class="prev-button">&lt;</button>
+                        <button id="next12" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Will judge you</p>
+                    <p><b>Species:</b> Golden Hamster</p>
+                    <p><b>Age:</b> 1</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer13" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Puss in Boots</h3>
+                    <div class="pet-images">
+                        <img id="image113" src="pics\cat17(3).jpg" class="visible">
+                        <img id="image213" src="pics\cat17(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev13" class="prev-button">&lt;</button>
+                        <button id="next13" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">An alcoholic</p>
+                    <p><b>Species:</b> Abyssinian</p>
+                    <p><b>Age:</b> 1</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Adopted</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer14" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Professor Wigglytail</h3>
+                    <div class="pet-images">
+                        <img id="image114" src="pics\cat14(3).jpg" class="visible">
+                        <img id="image214" src="pics\cat14(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev14" class="prev-button">&lt;</button>
+                        <button id="next14" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Aspire to be a millionaire</p>
+                    <p><b>Species:</b> Scottish Fold</p>
+                    <p><b>Age:</b> 3</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Adopted</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer15" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Fizzlepop Berrytwist</h3>
+                    <div class="pet-images">
+                        <img id="image115" src="pics\dog3.jpeg" class="visible">
+                        <img id="image215" src="pics\dog3(3).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev15" class="prev-button">&lt;</button>
+                        <button id="next15" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Loves balloon a little bit too much</p>
+                    <p><b>Species:</b> Shetland Sheepdog</p>
+                    <p><b>Age:</b> 3</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Adopted</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer16" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Taffy</h3>
+                    <div class="pet-images">
+                        <img id="image116" src="pics\cat12(3).jpg" class="visible">
+                        <img id="image216" src="pics\cat12(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev16" class="prev-button">&lt;</button>
+                        <button id="next16" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Very silly</p>
+                    <p><b>Species:</b> Ragdoll</p>
+                    <p><b>Age:</b> 3</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Adopted</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer17" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Aristocat</h3>
+                    <div class="pet-images">
+                        <img id="image117" src="pics\cat18.jpg" class="visible">
+                        <img id="image217" src="pics\cat18(2).jpg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev17" class="prev-button">&lt;</button>
+                        <button id="next17" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Used to scam grannies</p>
+                    <p><b>Species:</b> Devon Rex</p>
+                    <p><b>Age:</b> 3</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Adopted</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer18" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Waffles</h3>
+                    <div class="pet-images">
+                        <img id="image118" src="pics\dog7.jpeg" class="visible">
+                        <img id="image218" src="pics\dog7(2).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev18" class="prev-button">&lt;</button>
+                        <button id="next18" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Probably knows something about you that you don't</p>
+                    <p><b>Species:</b> Pembroke Welsh Corgi</p>
+                    <p><b>Age:</b> 2</p>
+                    <p><b>Gender:</b> Male</p>
+                    <p><b>Status:</b> Adopted</p>
+                </div>
+            </div>
+        </div><div class="one-pet">
+            <div id="petContainer19" class="pets-container">
+                <div class="oneContainer">
+                    <h3>Daisy</h3>
+                    <div class="pet-images">
+                        <img id="image119" src="pics\dog8.png" class="visible">
+                        <img id="image219" src="pics\dog8(2).jpeg">
+                    </div>
+                    <div class="buttons">
+                        <button id="prev19" class="prev-button">&lt;</button>
+                        <button id="next19" class="next-button">&gt;</button>
+                    </div>
+                    <p class="description">Used to love sniffing flowers. I wonder why she stopped</p>
+                    <p><b>Species:</b> Dachshund</p>
+                    <p><b>Age:</b> 2</p>
+                    <p><b>Gender:</b> Female</p>
+                    <p><b>Status:</b> Available</p>
+                </div>
+            </div>
+        </div></div>
+        </div>
+    </main>
+
+<link rel="stylesheet" href="footerInsurance.css">
+<footer id="footer">
+        <p class="footer-text">Contact us at support@petinsurance.com | Follow us on social media</p>
+        <div id="socialButtons">
+            <a href="" target="_blank" class="social-button" id="instagram">
+                <i class="fab fa-instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34315 4.34315 3 6 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.01 7H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="snapchat">
+                <i class="fab fa-snapchat-ghost"><svg width="24" height="24" viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 17.2078C3 17.2078 7.3963 15.1714 7.3963 8.2603C7.3963 5.71412 9.45744 3.65002 12 3.65002C14.5425 3.65002 16.6037 5.71412 16.6037 8.2603C16.6037 15.1714 21 17.2077 21 17.2077C20.2391 17.9229 18.6216 17.4866 17.7004 17.9944C16.7929 18.4947 16.2969 20.1004 15.2697 20.3636C14.2764 20.6181 13.0725 19.4567 12 19.4567C10.9275 19.4567 9.72359 20.6181 8.73032 20.3636C7.70312 20.1004 7.20706 18.4947 6.29958 17.9944C5.37842 17.4866 3.76085 17.9229 3 17.2078Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.0415 11.7731L19.2344 10.8947" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.95862 11.7732L4.76562 10.8947" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="linkedin">
+                <i class="fab fa-linkedin"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 11V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 11V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 17V14C11 12.3431 12.3431 11 14 11C15.6569 11 17 12.3431 17 14V16.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34315 4.34315 3 6 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8.01 8H8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="youtube">
+                <i class="fab fa-youtube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 9L15 12L10 15V9Z" fill="red"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5.25C3 4.00736 4.00736 3 5.25 3H18.75C19.9926 3 21 4.00736 21 5.25V18.75C21 19.9926 19.9926 21 18.75 21H5.25C4.00736 21 3 19.9926 3 18.75V5.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+        </div>
+        <p id="footer-copyright">© 2025 Smriti Kohli, Fiona Ang, Ariana Hrilic. All rights reserved.</p> <!-- Copyright Notice -->  
+    </footer>
+    
+    <script src="search.js" defer=""></script>
+
+<div id="webhighlights-notifications"></div>
+</body>
+</html>
