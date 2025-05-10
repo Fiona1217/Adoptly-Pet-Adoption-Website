@@ -1,7 +1,7 @@
 # 🐾 Adoptly. – Pet Adoption Website
 
 > [!IMPORTANT]
-> This is a **static JavaScript version** of the original dynamic website. It has been modified to:
+> This is a **static version** of the original dynamic website. Due to the original dynamic website that uses PHP/MySQL couldn't be able to host on GitHub Live Pages, it has been modified to:
 > - Remove all PHP/database dependencies
 > - Include all pet data directly in JavaScript
 > - Maintain all filtering functionality client-side
