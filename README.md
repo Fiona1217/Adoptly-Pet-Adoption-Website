@@ -6,6 +6,7 @@
 > - Include all pet data directly in JavaScript
 > - Maintain all filtering functionality client-side
 > 
+> All functionality works exactly as in the original version.<br />
 > **The actual original PHP/MySQL version with database connectivity can be found [here](https://github.com/ahrlic/Pet-Adoption-Application)**
 
 ## 📌 Project Overview
