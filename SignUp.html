@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is the meta header.-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Index page of the Insurance web pages">
+  <meta name="keywords" content="HTML, CSS, JavaScript, html">
+  <meta name="author" content="Smriti Kohli">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptly.-InsuranceSignUp</title>
+  <link rel="stylesheet" href="Insurance.css"><!--This is the link to the external css-->
+</head>
+
+<!--The body tag starts here-->
+<body class="page-background">
+    <!-- This is the header -->
+    <header>
+
+<link rel="stylesheet" href="UpperNavInsurance.css">
+
+<nav class="navbar1">
+    <a href="index.html" id="logo">Adoptly<span id="logo-dot">.</span></a>
+    <a class="nav-link1" href="index.html">Home</a>
+    <a class="nav-link1" href="search.html">Search</a>
+    <a class="nav-link1" href="Insurance.html">Insurance</a>
+    <a class="nav-link1" href="petCare.html">Tips</a>
+    <a class="nav-link1" href="contact.html">Contact</a>
+    <a class="nav-link1" href="login.html">Sign In</a>
+</nav>    </header>
+
+
+<!--This is the meta header.-->
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Index page of the Insurance web pages">
+  <meta name="keywords" content="HTML, CSS, JavaScript, html">
+  <meta name="author" content="Smriti Kohli">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptly.-navInsurance</title>
+
+
+<!--The body tag starts here.-->
+
+    <header id="header">
+        <h1 class="header-title">Adoptly.-Pet Insurance</h1>
+        <nav class="nav-bar">
+        <a href="Insurance.html" class="nav-link">Index</a>
+            <a href="InsurancePlans.html" class="nav-link">Plans</a>
+            <a href="WhyUs.html" class="nav-link">Why Choose Us</a>
+            <a href="FAQs.html" class="nav-link">FAQs</a>
+            <a href="SignUp.html" class="nav-link">Sign Up</a>
+        </nav>
+</header><!-- This is the Sign-Up Section -->
+    <section id="signup" class="signup-section">
+        <h2 class="section-title">Sign Up for Pet Insurance</h2>
+        <p class="section-text">Protect your furry friends today! Fill out the form below to get started. 🐾</p>
+        <div class="signup-image">
+            <img src="Images/benefits-of-pets-scaled-1.jpg" alt="Happy pets and owners" class="form-image">
+        </div>
+<!--This is where the form tag starts which is connected to the sign.html through the action tag.-->
+        <form id="signupForm" class="signup-form" action="sign.html" method="POST">
+<!-- This is the Owner Information fieldset-->
+            <fieldset>
+                <legend>Owner Information</legend>
+<!--This the column for the Full Name.-->
+                <label for="owner-name">Full Name:</label>
+                <input type="text" id="owner-name" name="owner-name" placeholder="Enter your full name" required="" fdprocessedid="n14829">
+<!--This the column for the Email.-->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required="" fdprocessedid="f5youb">
+<!--This the column for the Phone Number.-->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required="" fdprocessedid="u2b7vn">
+<!--This the column for the Address.-->
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your address" rows="3" required=""></textarea>
+            </fieldset>
+<!-- This is the Pet Information fieldset -->
+            <fieldset>
+                <legend>Pet Information</legend>
+<!--This the column for the Pet Name.-->
+                <label for="pet-name">Pet Name:</label>
+                <input type="text" id="pet-name" name="pet-name" placeholder="Enter your pet's name" required="" fdprocessedid="jljleh">
+<!--This the column for the Pet Type.-->
+                <label for="pet-type">Pet Type:</label>
+                <select id="pet-type" name="pet-type" required="" fdprocessedid="13msj">
+                    <option value="">Select pet type</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="other">Other</option>
+                </select>
+<!--This the column for the Pet Breed.-->
+                <label for="pet-breed">Pet Breed:</label>
+                <input type="text" id="pet-breed" name="pet-breed" placeholder="Enter your pet's breed" required="" fdprocessedid="8s5sfg">
+
+                <label for="pet-age">Pet Age:</label>
+                <input type="number" id="pet-age" name="pet-age" placeholder="Enter your pet's age (in years)" required="" fdprocessedid="sbfa0j">
+            </fieldset>
+<!-- This is the Insurance Plan fieldset -->
+            <fieldset>
+                <legend>Insurance Plan Selection</legend>
+                <label for="plan-type">Select a Plan:</label>
+                <select id="plan-type" name="plan-type" required="" fdprocessedid="3bxuaa">
+                    <option value="">Choose a plan</option>
+                    <option value="basic">Basic Plan</option>
+                    <option value="standard">Standard Plan</option>
+                    <option value="premium">Premium Plan</option>
+                </select>
+            </fieldset>
+<!-- Ths is the Submit Button -->
+            <input type="submit" class="signup-button" value="Submit Application" fdprocessedid="gv08pi">
+<!-- Ths is the reset Button -->
+            <button type="reset" class="signup-button" fdprocessedid="q25o6"> Reset Application</button>
+        </form>
+    </section>
+
+<link rel="stylesheet" href="footerInsurance.css">
+<footer id="footer">
+        <p class="footer-text">Contact us at support@petinsurance.com | Follow us on social media</p>
+        <div id="socialButtons">
+            <a href="" target="_blank" class="social-button" id="instagram">
+                <i class="fab fa-instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34315 4.34315 3 6 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.01 7H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="snapchat">
+                <i class="fab fa-snapchat-ghost"><svg width="24" height="24" viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 17.2078C3 17.2078 7.3963 15.1714 7.3963 8.2603C7.3963 5.71412 9.45744 3.65002 12 3.65002C14.5425 3.65002 16.6037 5.71412 16.6037 8.2603C16.6037 15.1714 21 17.2077 21 17.2077C20.2391 17.9229 18.6216 17.4866 17.7004 17.9944C16.7929 18.4947 16.2969 20.1004 15.2697 20.3636C14.2764 20.6181 13.0725 19.4567 12 19.4567C10.9275 19.4567 9.72359 20.6181 8.73032 20.3636C7.70312 20.1004 7.20706 18.4947 6.29958 17.9944C5.37842 17.4866 3.76085 17.9229 3 17.2078Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.0415 11.7731L19.2344 10.8947" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.95862 11.7732L4.76562 10.8947" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="linkedin">
+                <i class="fab fa-linkedin"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 11V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 11V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 17V14C11 12.3431 12.3431 11 14 11C15.6569 11 17 12.3431 17 14V16.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34315 4.34315 3 6 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8.01 8H8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="youtube">
+                <i class="fab fa-youtube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 9L15 12L10 15V9Z" fill="red"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5.25C3 4.00736 4.00736 3 5.25 3H18.75C19.9926 3 21 4.00736 21 5.25V18.75C21 19.9926 19.9926 21 18.75 21H5.25C4.00736 21 3 19.9926 3 18.75V5.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+        </div>
+        <p id="footer-copyright">© 2025 Smriti Kohli, Fiona Ang, Ariana Hrilic. All rights reserved.</p> <!-- Copyright Notice -->  
+    </footer>
+    
+
+
+
+<div id="webhighlights-notifications"></div><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body>
+<!--The body tag ends here.-->
+</html>
+<!--The class ends here.-->
