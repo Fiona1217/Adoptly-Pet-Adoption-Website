@@ -1,16 +1,10 @@
-<!--Name: Smriti Kohli, Fiona Ang, Ariana Hrlic
-Author: Smriti Kohli
-File: InsurancePlans.php
-Date: April 8,2025
-Description: This is the Insurance Plan page among the Insurance web pages.-->
-
 <!DOCTYPE html>
 <html lang="en">
 <!--This is the meta header.-->
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Index page of the Insurance web pages">
-  <meta name="keywords" content="HTML, CSS, JavaScript, php">
+  <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
   <meta name="author" content="Smriti Kohli">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adoptly.-InsurancePlans</title>
@@ -18,16 +12,45 @@ Description: This is the Insurance Plan page among the Insurance web pages.-->
 </head>
 
 <!--The body tag starts here.-->
-<body id="PlanBdy">
+<body id="PlanBdy" class="page-background">
     <!-- This is the header -->
     <header>
-        <!--This is where this php file gets connected to nav.php to have the nav of other web pages of Adotly.-->
-        <?php include 'UpperNavInsurance.php'; ?>
-    </header>
-<!--This is where this page gets connected to navInsurance.php to have nav.-->
-    <?php include 'navInsurance.php'; ?>
-<!--This is the first section.-->
-    <section  class="plans-section">
+
+<link rel="stylesheet" href="UpperNavInsurance.css">
+
+<nav class="navbar1">
+    <a href="index.html" id="logo">Adoptly<span id="logo-dot">.</span></a>
+    <a class="nav-link1" href="index.html">Home</a>
+    <a class="nav-link1" href="search.html">Search</a>
+    <a class="nav-link1" href="Insurance.html">Insurance</a>
+    <a class="nav-link1" href="petCare.html">Tips</a>
+    <a class="nav-link1" href="contact.html">Contact</a>
+    <a class="nav-link1" href="login.html">Sign In</a>
+</nav>    </header>
+
+<!--This is the meta header.-->
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Index page of the Insurance web pages">
+  <meta name="keywords" content="HTML, CSS, JavaScript, html">
+  <meta name="author" content="Smriti Kohli">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoptly.-navInsurance</title>
+
+
+<!--The body tag starts here.-->
+
+    <header id="header">
+        <h1 class="header-title">Adoptly.-Pet Insurance</h1>
+        <nav class="nav-bar">
+        <a href="Insurance.html" class="nav-link">Index</a>
+            <a href="InsurancePlans.html" class="nav-link">Plans</a>
+            <a href="WhyUs.html" class="nav-link">Why Choose Us</a>
+            <a href="FAQs.html" class="nav-link">FAQs</a>
+            <a href="SignUp.html" class="nav-link">Sign Up</a>
+        </nav>
+</header><!--This is the first section.-->
+    <section class="plans-section">
         <h2 class="section-title">Our Plans</h2>
 <!--This is the first div.-->
 <!--This is the starting of the box which contains the info about basic plan.-->
@@ -271,9 +294,42 @@ Description: This is the Insurance Plan page among the Insurance web pages.-->
             </tbody>
         </table>
     </section>
-<!--This is where this file gets connected to the footerInsurance.php to have the footer.-->
-    <?php include 'footerInsurance.php'; ?>   
-</body>
+<!--This is where this file gets connected to the footerInsurance.html to have the footer.-->
+    <!-- Name: Ariana Hrlic, Fiona Ang, Smriti Kohli
+Author: Smriti Kohli
+Section: CST 8285 300_301
+File: footerInsurance.html
+Date: April 8, 2025
+Description: This is a html file for Assignment2 -->
+
+<link rel="stylesheet" href="footerInsurance.css">
+<footer id="footer">
+        <p class="footer-text">Contact us at support@petinsurance.com | Follow us on social media</p>
+        <div id="socialButtons">
+            <a href="" target="_blank" class="social-button" id="instagram">
+                <i class="fab fa-instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34315 4.34315 3 6 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.01 7H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="snapchat">
+                <i class="fab fa-snapchat-ghost"><svg width="24" height="24" viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 17.2078C3 17.2078 7.3963 15.1714 7.3963 8.2603C7.3963 5.71412 9.45744 3.65002 12 3.65002C14.5425 3.65002 16.6037 5.71412 16.6037 8.2603C16.6037 15.1714 21 17.2077 21 17.2077C20.2391 17.9229 18.6216 17.4866 17.7004 17.9944C16.7929 18.4947 16.2969 20.1004 15.2697 20.3636C14.2764 20.6181 13.0725 19.4567 12 19.4567C10.9275 19.4567 9.72359 20.6181 8.73032 20.3636C7.70312 20.1004 7.20706 18.4947 6.29958 17.9944C5.37842 17.4866 3.76085 17.9229 3 17.2078Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.0415 11.7731L19.2344 10.8947" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.95862 11.7732L4.76562 10.8947" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="linkedin">
+                <i class="fab fa-linkedin"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 11V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 11V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11 17V14C11 12.3431 12.3431 11 14 11C15.6569 11 17 12.3431 17 14V16.5V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 3H18C19.6569 3 21 4.34315 21 6V18C21 19.6569 19.6569 21 18 21H6C4.34315 21 3 19.6569 3 18V6C3 4.34315 4.34315 3 6 3Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8.01 8H8" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+            <a href="" target="_blank" class="social-button" id="youtube">
+                <i class="fab fa-youtube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 9L15 12L10 15V9Z" fill="red"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5.25C3 4.00736 4.00736 3 5.25 3H18.75C19.9926 3 21 4.00736 21 5.25V18.75C21 19.9926 19.9926 21 18.75 21H5.25C4.00736 21 3 19.9926 3 18.75V5.25Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></i>
+            </a><!--Reference for symbol: https://framesxdesign.com/copy-paste-icons/logo-instagram-->
+        </div>
+        <p id="footer-copyright">© 2025 Smriti Kohli, Fiona Ang, Ariana Hrilic. All rights reserved.</p> <!-- Copyright Notice -->  
+    </footer>
+    
+   
+
+
+
+<div id="webhighlights-notifications"></div></body>
 <!--The footer ends here.-->
 </html>
 <!--The file ends here.-->
