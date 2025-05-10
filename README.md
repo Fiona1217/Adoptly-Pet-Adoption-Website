@@ -9,9 +9,9 @@ This project was developed as part of our **Web Programming course** at **Algonq
 
 ## 👥 Team Collaboration
 This was a **three-member group project**. The tasks done are as follows:<br />
---**Ariana Hrlic**: Created the Home and Tips page. Used HTML, CSS, JavaScript and PHP.<br />
---**Fiona Ang** : Created Contact, Search SignIn/LogIn page, database including pets and users infos. Used HTML, CSS, JavaScript, PHP and MY SQL using phpMyAdmin.<br />
---**Smriti Kohli**: Created the Insurance Page which has further sub 5 pages Index, Plans for Insurance, Why Choose Us for Insurance, Frequently Asked Questions regarding Insurance and Sign Up for Insurance. Used HTML, CSS, JavaScript and PHP.<br />
+- **Ariana Hrlic**: Created the Home and Tips page. Used HTML, CSS, JavaScript and PHP.<br />
+- **Fiona Ang** : Created Contact, Search SignIn/LogIn page, database including pets and users infos. Used HTML, CSS, JavaScript, PHP and MY SQL using phpMyAdmin.<br />
+- **Smriti Kohli**: Created the Insurance Page which has further sub 5 pages Index, Plans for Insurance, Why Choose Us for Insurance, Frequently Asked Questions regarding Insurance and Sign Up for Insurance. Used HTML, CSS, JavaScript and PHP.<br />
 
 ---
 
