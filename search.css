@@ -198,3 +198,17 @@ img.visible {
     border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.pet-images img {
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pet-images img.visible {
+    display: block;
+}
