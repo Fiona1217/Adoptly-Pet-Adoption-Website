@@ -227,17 +227,18 @@ const currentImageIndices = {};
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initial display of all pets
-    renderPets(petsData);
+    displayFilteredPets();
     
-    // Add event listener for the filter form
+    // Add event listener for the filter form submit (button click)
     document.getElementById('filter-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        filterPets();
+        e.preventDefault(); // Prevent form submission
+        displayFilteredPets(); // Apply filters
     });
 
-    // Also filter when checkboxes change (better UX)
-    document.querySelectorAll('#filter-form input[type="checkbox"]').forEach(checkbox => {
-        checkbox.addEventListener('change', filterPets);
+    // Remove any change event listeners from checkboxes if they exist
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.replaceWith(checkbox.cloneNode(true)); // This removes any existing event listeners
     });
 });
 
